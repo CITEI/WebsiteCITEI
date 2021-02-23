@@ -1,0 +1,54 @@
+/*
+Theme Name: CITEI
+Author: Nickolas da Rocha Machado & Natalia Zambe da Silva
+Version: 1.1
+ */
+
+/*BOOTSTRAP CUSTOM*/
+/*! `Custom` Bootstrap 4 theme *//*!
+ * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+.container
+{
+    flex-flow: column;
+}
+
+.row, .full-width, .container-fluid
+{
+    width: 100%;
+}
+
+.row-spacing
+{
+    margin-bottom: 10px;
+}
+
+.widget
+{
+    list-style-type: none;
+}
+
+.site-footer
+{
+    min-height: 150px;
+}
+
+html
+{
+    zoom: 1.2;
+}
+
+.rounded-pill-right
+{
+    border-top-right-radius: 50rem !important;
+    border-bottom-right-radius: 50rem !important;
+}
+.rounded-pill-left
+{
+    border-top-left-radius: 50rem !important;
+    border-bottom-left-radius: 50rem !important;
+}
