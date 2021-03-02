@@ -1,19 +1,19 @@
 <?php
 /*
-Type: Index
-Purpose: Default fallback for everything
+Type: Search
+Purpose: Shows the posts obtained by a search
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>
 <?php
 get_header();
-?>
 
+?>
 <main>
 <?php get_template_part('template_parts/content/post_list', '',
     array(
-        'yes_title' => "",
-        'no_title' => ""
+        'yes_title' => "Resultados da busca",
+        'no_title' => "Sem resultados para busca"
     ));
 ?>
 </main>

@@ -4,14 +4,6 @@ Author: Nickolas da Rocha Machado & Natalia Zambe da Silva
 Version: 1.1
  */
 
-/*BOOTSTRAP CUSTOM*/
-/*! `Custom` Bootstrap 4 theme *//*!
- * Bootstrap v4.5.0 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
 .container
 {
     flex-flow: column;
@@ -32,14 +24,10 @@ Version: 1.1
     list-style-type: none;
 }
 
-.site-footer
-{
-    min-height: 150px;
-}
-
 html
 {
     zoom: 1.2;
+    scroll-behavior: smooth;
 }
 
 .rounded-pill-right
@@ -51,4 +39,21 @@ html
 {
     border-top-left-radius: 50rem !important;
     border-bottom-left-radius: 50rem !important;
+}
+
+.cover
+{
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.child-expand
+{
+    display: flex;
+    align-self: stretch;
+}
+
+.expanded-child
+{
+    flex: 1;
 }

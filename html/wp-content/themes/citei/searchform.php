@@ -1,3 +1,10 @@
+<?php
+/*
+Type: Search form
+Purpose: Replaces search form component
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
+?>
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
     <label class="my-auto">
         <span class="sr-only screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>

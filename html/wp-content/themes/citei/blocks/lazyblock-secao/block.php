@@ -9,7 +9,8 @@
             if(isset($attributes['bgimage']['url']))
             {
                 echo "\nbackground: url(",  esc_url($attributes['bgimage']['url'] ), ");",
-                        "background-size: cover", ';';
+                        "\nbackground-size: cover;",
+                        "\nbackground-position: center;";
             }
         ?>
         min-height: <?php echo $attributes['min-height']; ?>px">

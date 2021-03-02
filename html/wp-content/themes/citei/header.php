@@ -13,21 +13,20 @@
     <body class="min-vh-100 d-flex flex-column" <?php body_class(); ?>>
         <header class="navbar navbar-expand-md navbar-light bg-white
                 ">
-            <div class="container">
-                <div class="row row-spacing justify-content-center">
-                    <div class="col-auto text-center" id="test">
-                        <div class="float-md-left">
-                            <?php get_template_part( 'template_parts/header/logo' ); ?>
-                        </div>
-                    </div>
-                    <div class="col-md-5 py-2 align-self-center">
-                        <?php get_template_part( 'template_parts/header/navmenu' ); ?>
-                    </div>
-                    <div class="col-md-4 header-right py-2 text-center align-self-center">
-                        <div class="float-md-right">
-                            <?php get_search_form(); ?>
-                        </div>
+            <div class="row row-spacing justify-content-center mx-auto px-xl-4">
+                <div class="col-xl-2 col-xs-12 text-center" id="test">
+                    <?php get_template_part( 'template_parts/header/logo' ); ?>
+                </div>
+                <div class="col-xl-7 col-xs-12 col-md-auto py-2 
+                    d-flex justify-content-center align-self-center">
+                    <?php get_template_part( 'template_parts/header/navmenu' ); ?>
+                </div>
+                <div class="col-xl-3 col-xs-12 header-right py-2 text-center 
+                    d-flex justify-content-center align-self-center">
+                    <div class="float-md-right">
+                        <?php get_search_form(); ?>
                     </div>
                 </div>
             </div>
         </header>
+        <div id="content" tabindex="-1">

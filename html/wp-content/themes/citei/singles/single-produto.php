@@ -1,0 +1,25 @@
+<?php
+/*
+Type: Single
+Name: Produtos
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
+?>
+<?php 
+    get_header(); 
+    the_post();
+    $cover = get_field("coverimg");
+?>
+<div class="">
+    <?php
+        get_template_part('template_parts/content/cover', 
+            '', array(
+                'imgurl' => $cover['url'],
+                'title' => get_the_title(),
+                'description' => get_the_excerpt()
+            ));
+    ?>
+</div>
+<?php the_content() ?>
+
+<?php get_footer(); ?>
