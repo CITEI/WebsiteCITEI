@@ -1,3 +1,11 @@
+<?php
+/*
+Type: LazyBlock
+Name: Carousel gallery
+Purpose: Displays an image carousel
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
+?>
 <?php 
     $id = new_id() ;
     $imgs = $attributes['imgs'];

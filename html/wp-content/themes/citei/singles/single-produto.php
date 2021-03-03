@@ -2,6 +2,7 @@
 /*
 Type: Single
 Name: Produtos
+Purpose: Displays  a post about a product
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>

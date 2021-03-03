@@ -2,6 +2,7 @@
 /*
 Type: Single
 Name: Pessoa
+Purpose: Displays a post about a person
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>

@@ -1,3 +1,12 @@
+<?php
+/*
+Type: LazyBlock
+Name: Profile columns
+Purpose: Displays up to 3 cards containing a 
+    profile image, title and descritpion of a person
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
+?>
 <div class="container">
     <div class="row mx-auto justify-content-center">
     <?php 

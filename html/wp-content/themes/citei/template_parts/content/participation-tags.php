@@ -2,6 +2,7 @@
 /*
 Type: Template Part
 Name: Participation tags
+Purpose: Displays posts as a tag cloud layout of a specific post type with a specified tag
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>

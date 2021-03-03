@@ -1,3 +1,10 @@
+<?php
+/*
+Type: Header
+Purpose: Contains header layout
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
+?>
 <!doctype html>
 <html class="min-vh-100" <?php language_attributes(); ?>>
     <head>

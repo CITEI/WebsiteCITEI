@@ -1,3 +1,11 @@
+<?php
+/*
+Type: LazyBlock
+Name: Text tabs
+Purpose: Displays tabs containing text
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
+?>
 <?php 
     $tabs = $attributes['tabs'];
 

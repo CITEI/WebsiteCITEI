@@ -1,7 +1,12 @@
+<?php
+/*
+Type: Template_part
+Name: Logo
+Purpose: Displays custom logo or blog's name
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
+?>
 <?php 
-
-/* Displays custom logo image or blog's name */
-
     if(has_custom_logo())
     {
 ?>

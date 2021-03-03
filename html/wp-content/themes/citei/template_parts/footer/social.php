@@ -1,24 +1,32 @@
 <?php
 /*
-Type: Template-part
-Name: Social media
+Type: Template_part
+Name: Social-media
+Purpose: Displays social media links
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>
-<h5 class="text-uppercase">Redes sociais</h5>
-<ul class="list-unstyled m-0 my-2">
-    <?php
-        foreach($args as $smedia)
+<?php
+    $list = '';
+    foreach($args as $smedia)
+    {
+        if ($smedia['url'] != '')
         {
-            ?>
-            <li class="mt-2">
-                <a href="<?php echo $smedia['url'] ?>"
-                   class="text-capitalize text-reset">
-                        <i class="mr-2 bi bi-<?php echo $smedia['label'] ?>"></i>
-                        <span><?php echo $smedia['label'] ?></span>
-                </>
-            </li>
-    <?php
+            $list .= <<< EOD
+                <li class="mt-2">
+                    <a href="{$smedia['url']}"
+                    class="text-capitalize text-reset">
+                            <i class="mr-2 bi bi-{$smedia['label']}"></i>
+                            <span>{$smedia['label']}</span>
+                    </a>
+                </li>
+            EOD;
         }
-    ?>
-</ul>
+    }
+    if ($list != '')
+    { ?>
+        <h5 class="text-uppercase">Redes sociais</h5>
+        <ul class="list-unstyled m-0 my-2">
+            <?php echo $list ?>
+        </ul>
+<?php } ?>

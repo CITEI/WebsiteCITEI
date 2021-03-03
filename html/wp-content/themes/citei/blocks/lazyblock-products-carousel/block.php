@@ -1,3 +1,12 @@
+<?php
+/*
+Type: LazyBlock
+Name: Products carousel
+Purpose: Displays an image carousel with title and excerpt 
+    of posts from a post type
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
+?>
 <?php 
     $id = new_id() ;
     $slides = new WP_Query(array(

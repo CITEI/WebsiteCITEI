@@ -2,6 +2,7 @@
 /*
 Type: Template-part
 Name: Footer menu
+Purpose: Displays menu links as a site map layout
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>

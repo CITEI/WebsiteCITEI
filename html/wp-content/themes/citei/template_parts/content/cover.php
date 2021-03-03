@@ -1,3 +1,11 @@
+<?php
+/*
+Type: Template_part
+Name: Cover
+Purpose: Displays cover image
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
+?>
 <div style="
     background: url(<?php echo $args['imgurl'] ?>);
     background-size: cover;

@@ -1,3 +1,12 @@
+<?php
+/*
+Type: LazyBlock
+Name: Section
+Purpose: Separates a piece of the page with full width, but displays
+     content inside a container
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
+?>
 <div class="jumbotron-fluid py-4 d-flex" style="
         background-color: <?php
             $color = "";

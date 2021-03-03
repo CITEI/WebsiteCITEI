@@ -1,3 +1,10 @@
+<?php
+/*
+Type: Footer
+Purpose: Contains footer layout
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
+?>
         </div>
         <footer class="site-footer bg-dark navbar navbar-expand 
             mt-auto w-100 container-fluid d-flex flex-column text-white p-0">
@@ -15,9 +22,9 @@
                         col-md-6 col-xs-12 text-lg-left text-center">
                     <?php get_template_part('template_parts/footer/social', '',
                                 array(
-                                    new_social_media('facebook', 'http://www.facebook.com'),
-                                    new_social_media('youtube', ''),
-                                    new_social_media('instagram', '')
+                                    new_social_media('facebook', get_option('facebook_url')),
+                                    new_social_media('youtube', get_option('youtube_url')),
+                                    new_social_media('instagram', get_option('instagram_url'))
                                 )) ?>
                 </div>
             </div>
@@ -33,5 +40,6 @@
 
 
         <?php wp_footer(); ?>
+        <?php get_template_part('template_parts/footer/vlibras'); ?>
     </body>
 </html>

@@ -1,7 +1,10 @@
-<?php 
-
-/* Displays main menu */ 
-
+<?php
+/*
+Type: Template_part
+Name: Nav menu
+Purpose: Displays main menu
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
 ?>
 <div class="w-100 text-center px-0">
     <button class="btn rounded-pill navbar-toggler full-width" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">

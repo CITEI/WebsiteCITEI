@@ -1,4 +1,11 @@
-
+<?php 
+/*
+Type: Template Part
+Name: Post list
+Purpose: Displays a list of posts
+Author: Nickolas da Rocha Machado & Natalia Zambe
+ */
+?>
 <?php
     if (have_posts())
     {
