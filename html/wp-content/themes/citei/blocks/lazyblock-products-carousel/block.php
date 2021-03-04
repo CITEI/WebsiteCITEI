@@ -48,11 +48,11 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                                         style="
                                             width: 70%;
                                         ">
-                                        <h2 class="text-lowercase"
+                                        <h1 class="text-lowercase"
                                             aria-hidden="true">
                                             <?php echo $attributes['post_type'] ?>
-                                        </h2>
-                                        <h1 class="display-4 text-break"
+                                        </h1>
+                                        <h1 class="display-3 text-break"
                                             tabindex="0">
                                             <?php echo get_the_title() ?>
                                         </h1>
@@ -61,7 +61,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                                             <?php echo get_the_excerpt() ?>
                                         </p>
                                         <a 
-                                            class="btn btn-primary stretched-link
+                                            class="btn btn-primary
                                                     align-self-end"
                                             href="<?php the_permalink() ?>">
                                             Ler mais

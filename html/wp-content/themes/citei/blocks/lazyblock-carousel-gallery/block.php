@@ -15,7 +15,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
         <div id="citeicarouselgallery-<?php echo $id; ?>" 
             class="carousel slide child-expand rounded
                 d-flex justify-content-center" 
-            data-ride="carousel"
+            data-interval="false"
             style="
                 height: <?php echo $attributes['height'] ?>px;
                 ">

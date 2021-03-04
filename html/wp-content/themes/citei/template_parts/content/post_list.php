@@ -11,9 +11,9 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     {
 ?>
         <div class="container my-4 text-center">
-            <h2 tabindex="-1"><?php echo $args['yes_title'] ?></h2>
+            <h1 tabindex="-1"><?php echo $args['yes_title'] ?></h1>
         </div>
-    <ul role="list" tabindex="0" 
+    <ul role="list" tabindex="0"  class="p-0 mb-0"
         aria-label="<?php echo $args['yes_title'] ?>" class="list-unstyled">
     <?php
         while(have_posts())
@@ -34,15 +34,15 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                                         alt="<?php echo get_post_meta( get_post_thumbnail_id(), 
                                                         '_wp_attachment_image_alt', true); ?>"
                                         class="rounded-circle"
-                                        style="width: 200px" />
+                                        style="width: 230px" />
                                 </a>
                             </div>
                         <?php } ?>
                         <div class="col p-2 my-auto d-flex flex-column"
                             role="row" tabindex="-1">
-                            <h4><?php echo get_the_title(); ?></h4>
+                            <h3><?php echo get_the_title(); ?></h3>
                             <p><?php echo get_the_excerpt(); ?></p>
-                            <a class="btn btn-primary align-self-end stretched-link" 
+                            <a class="btn btn-primary align-self-end" 
                                 role="complementary" tabindex="0"
                                 href="<?php echo get_the_permalink(); ?>">
                                 Ler mais

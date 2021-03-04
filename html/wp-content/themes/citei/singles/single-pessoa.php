@@ -23,7 +23,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                     />
                 <div class="card-body" >
                     <div tabindex="0" aria-label="Resumo">
-                        <h5 tabindex="-1">Resumo</h5>
+                        <h4 tabindex="-1">Resumo</h4>
                         <p tabindex="0">
                             <?php echo get_the_excerpt(); ?>
                         </p>

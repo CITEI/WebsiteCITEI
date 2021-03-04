@@ -15,7 +15,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
         {
             return <<< EOD
                 <li class="mx-3">
-                    <a class="nav-link {$active} rounded-pill border-0 text-reset" 
+                    <a class="nav-link {$active} rounded-pill border-0 text-reset
+                        px-4" 
                     id="citeitt{$id}-{$label}-tab" 
                     data-toggle="tab" 
                     href="#citeitt{$id}-{$label}" 

@@ -4,13 +4,23 @@ Purpose: Fix blocks problems by using jQuery
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 
+ function no_sr(field)
+ {
+  return field.attr("role", "").attr("tabindex", "-1")
+ }
+
+ function sr(field)
+ {
+   return field.attr("tabindex", "0")
+ }
+
  function fixTabIndexes()
  {
-   $('.wp-block-column , .wp-block-group__inner-container , \
+   sr($('.wp-block-column , .wp-block-group__inner-container , \
         .wp-block-image > figure , .sr-read-children'
-        ).children('h1, h2, h3, h4, h5, img, p'
-        ).attr("tabindex", "0")
-   $('#pojo-a11y-toolbar, .pojo-a11y-toolbar-toggle-link').attr("role", "").attr("tabindex", "-1")
+        ).children('h1, h2, h3, h4, h5, img, p'))
+
+   no_sr(no_sr($('#pojo-a11y-toolbar')).find('*'))
  }
 
  function bootstrapFileBlock()

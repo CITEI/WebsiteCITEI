@@ -26,7 +26,6 @@ Version: 1.1
 
 html
 {
-    zoom: 1.2;
     scroll-behavior: smooth;
 }
 
@@ -56,4 +55,34 @@ html
 .expanded-child
 {
     flex: 1;
+}
+
+/* Artificial Zoom */
+body, .lead
+{
+    font-size: 120%;
+}
+.text-muted
+{
+    font-size: 90% !important;
+}
+.btn
+{
+    font-size: 95%;
+}
+.carousel-control-prev-icon, 
+.carousel-control-next-icon
+{
+    width: 25px;
+    height: 25px;
+}
+.tag
+{
+    font-size: 105%;
+}
+@media (min-width: 576px)
+{
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 90%;
+    }
 }

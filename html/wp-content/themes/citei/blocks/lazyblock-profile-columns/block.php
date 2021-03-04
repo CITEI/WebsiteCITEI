@@ -18,16 +18,16 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                 <img class="card-img-top mx-auto" 
                     style="
                     border-radius: 50%;
-                    max-width: 200px;"
+                    max-width: 230px;"
                     src="<?php echo $profile['picture']['url'] ?>" 
                     alt="<?php echo $profile['picture']['alt'] ?>">
                 <div class="card-body">
-                    <a class="text-reset stretched-link"
+                    <a class="text-reset"
                         tabindex="0" role="link"
                         href="<?php if(isset($profile['url'])) echo $profile['url'] ?>">
-                        <h5 class="card-title">
+                        <h4 class="card-title">
                             <?php echo $profile['title'] ?>
-                        </h5>
+                        </h4>
                     </a>
                     <p class="card-text"><?php echo $profile['description'] ?></p>
                 </div>

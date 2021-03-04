@@ -22,7 +22,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
         ">
         <div class="py-4 container sr-read-children"
             tabindex="-1">
-            <h1 class="display-4 text-break"><?php echo $args['title'] ?></h1>
+            <h1 class="display-3 text-break"><?php echo $args['title'] ?></h1>
             <p class="lead"><?php echo $args['description'] ?>
         </div> 
     </div>

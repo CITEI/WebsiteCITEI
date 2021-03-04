@@ -7,7 +7,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>
 <div class="w-100 text-center px-0">
-    <button class="btn rounded-pill navbar-toggler full-width" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="btn rounded-pill navbar-toggler full-width py-2" type="button" data-toggle="collapse" data-target="#nav-content" 
+        aria-controls="nav-content" aria-expanded="false" aria-label="Alternar menu">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse collapse mx-auto" id="nav-content">
