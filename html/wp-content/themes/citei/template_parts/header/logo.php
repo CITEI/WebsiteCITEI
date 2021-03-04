@@ -10,7 +10,9 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     if(has_custom_logo())
     {
 ?>
-        <a href="<?php echo get_home_url() ?>">
+        <a id="logo-link" href="<?php echo get_home_url() ?>" 
+            role="link" aria-label="Ir para início"
+            tabindex="100">
             <img src="<?php echo get_the_custom_logo_url() ?>"
                 alt="<?php echo bloginfo('name') ?>"
                 style="

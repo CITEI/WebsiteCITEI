@@ -16,12 +16,13 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
             return <<< EOD
                 <li class="mx-3">
                     <a class="nav-link {$active} rounded-pill border-0 text-reset" 
-                    id="{$id}tt-{$label}-tab" 
+                    id="citeitt{$id}-{$label}-tab" 
                     data-toggle="tab" 
-                    href="#tt-{$label}" 
-                    role="tab" aria-controls="${id}tt-{$label}" 
+                    href="#citeitt{$id}-{$label}" 
+                    role="tab" 
+                    aria-controls="citeitt{$id}-{$label}" 
                     aria-selected="{$aria}">
-                    <u>{$label}</u>
+                        <u>{$label}</u>
                     </a>
                 </li>
             EOD;
@@ -34,10 +35,11 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
         {
             return <<< EOD
                 <div class="tab-pane show fade {$active} text-reset" 
-                    id="tt-{$label}" 
-                    role="tabpanel" aria-labelledby="{$id}tt-{$label}-tab">
-                    {$text}
-                </div>
+                    id="citeitt{$id}-{$label}" 
+                    role="tabpanel"
+                    tabindex="-1">
+                        <p>{$text}</p>
+                </div> 
             EOD;
         }
     }
@@ -58,12 +60,19 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
             $contents .= get_tab($id, $tab['text'], $tab['label']);
         } 
 ?>
-        <nav class="text-reset nav-pills">
-            <ul class="nav nav-tabs border-0 justify-content-center mb-2" id="<?php echo $id; ?>tt-nav-tab" role="tablist">
-                <?php echo $buttons; ?>
-            </ul>
-            <div class="tab-content text-reset py-3" id="nav-tabContent">
+        <div tabindex="0" aria-label="Guias com texto">
+            <div class="text-reset nav-pills" tabindex="-1">
+                <ul class="nav nav-tabs border-0 justify-content-center mb-2" 
+                    id="citeitt<?php echo $id ?>-nav-tab" 
+                    role="tablist"
+                    tabindex="-1">
+                    <?php echo $buttons; ?>
+                </ul>
+            </div>
+            <div class="tab-content text-reset py-3" 
+                id="citeitt<?echo $id ?>-tab-content" 
+                tabindex="-1">
                 <?php echo $contents; ?>
             </div>
-        </nav>
+        </div>
 <?php } ?>

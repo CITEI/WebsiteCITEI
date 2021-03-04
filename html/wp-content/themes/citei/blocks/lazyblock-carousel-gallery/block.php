@@ -32,7 +32,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                             <?php echo $active; ?>">
                             <div class="w-100 h-100 d-flex flex-column
                                 justify-content-center align-items-center">
-                                <img class="rounded"
+                                <img tabindex="0" role="img"
+                                    class="rounded"
                                     src="<?php echo $img['img']['url'] ?>"
                                     alt="<?php echo $img['img']['alt'] ?>"
                                     style="
@@ -47,14 +48,14 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                 ?>
             </div>
             <a class="carousel-control-prev" href="#citeicarouselgallery-<?php echo $id; ?>" 
-                role="button" data-slide="prev">
+                role="button" aria-label="Imagem anterior"
+                data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#citeicarouselgallery-<?php echo $id; ?>" role="button" 
+                role="button" aria-label="Próxima imagem"
                 data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
             </a>
         </div>
 <?php

@@ -6,7 +6,7 @@ Purpose: Displays menu links as a site map layout
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>
-<h5 class="text-uppercase">Mapa do site</h5>
+<h5 id="sitemap-title" class="text-uppercase">Mapa do site</h5>
 <ul class="list-unstyled m-0 my-2">
     <li class="mt-2"><a class="text-reset" href="<?php echo get_home_url() ?>">
         Início

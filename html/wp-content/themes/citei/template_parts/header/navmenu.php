@@ -11,13 +11,14 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse collapse mx-auto" id="nav-content">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" role="menu">
             <?php
                 $menu = wp_get_menu_array(get_nav_menu_locations()['primary']);
                 foreach ($menu as $item)
                 { ?>
-                    <li class="nav-item">
-                        <a class="nav-link text-nowrap" href="<?php echo $item['url'] ?>">
+                    <li class="nav-item" role="none">
+                        <a class="nav-link text-nowrap" role="menuitem"
+                            href="<?php echo $item['url'] ?>">
                             <?php echo $item['title'] ?>
                         </a>
                     </li>

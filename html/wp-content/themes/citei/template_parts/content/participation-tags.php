@@ -18,21 +18,25 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
         if ($posts->have_posts())
         { 
             ?>
-            <h5><?php echo $args['label'] ?></h5>
-            <div class="row mx-auto">
-                <?php 
-                    while($posts->have_posts())
-                    { 
-                        $posts->the_post();
-                        ?>
-                        <div class="col col-auto p-1">
-                            <a class="btn btn-primary rounded-pill" 
-                                href="<?php echo the_permalink($post) ?>">
-                                <?php echo get_the_title($post) ?>
-                            </a>
-                        </div>
-                <?php }
-                    wp_reset_postdata();
-                ?>
+            <div tabindex="0"
+                aria-label="<?php echo $args['label'] ?>">
+                <h5><?php echo $args['label'] ?></h5>
+                <div class="row mx-auto">
+                    <?php 
+                        while($posts->have_posts())
+                        { 
+                            $posts->the_post();
+                            ?>
+                            <div class="col col-auto p-1">
+                                <a class="btn btn-primary rounded-pill" tabindex="0"
+                                    role="link"
+                                    href="<?php echo the_permalink($post) ?>">
+                                    <?php echo get_the_title($post) ?>
+                                </a>
+                            </div>
+                    <?php }
+                        wp_reset_postdata();
+                    ?>
+                </div>
             </div>
 <?php } } ?>

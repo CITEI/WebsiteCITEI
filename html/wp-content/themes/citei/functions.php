@@ -82,6 +82,13 @@ function custom_theme_assets() {
 add_action( 'wp_enqueue_scripts', 'custom_theme_assets' );
 
 
+/* JS Scripts */
+function myprefix_enqueue_scripts() {
+    wp_enqueue_script( 'fixes', 
+        get_template_directory_uri() . '/js/fixes.js', array(), true );
+}
+add_action( 'wp_enqueue_scripts', 'myprefix_enqueue_scripts' );
+
 
 /* Nav menus */
 function wp_get_menu_array($current_menu) {

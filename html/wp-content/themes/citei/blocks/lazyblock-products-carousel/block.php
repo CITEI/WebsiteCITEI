@@ -17,11 +17,14 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
 ?>
         <div id="citeicarousel-<?php echo $id; ?>" 
             class="carousel slide child-expand" 
-            data-ride="carousel"
+            data-interval="false"
+            aria-label="Carrossel de <?php echo $attributes['post_type'] ?>"
+            tabindex="0"
             style="
                 min-height: <?php echo $attributes['min-height'] ?>px;
                 ">
-            <div class="carousel-inner expanded-child" style="">
+            <div id="citeicarousel<?php echo $id ?>-inner"
+                class="carousel-inner expanded-child" style="">
                 <?php
                     $active = "active";
                     while($slides->have_posts())
@@ -45,17 +48,20 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                                         style="
                                             width: 70%;
                                         ">
-                                        <h2 class="text-lowercase">
+                                        <h2 class="text-lowercase"
+                                            aria-hidden="true">
                                             <?php echo $attributes['post_type'] ?>
                                         </h2>
-                                        <h1 class="display-4 text-break">
+                                        <h1 class="display-4 text-break"
+                                            tabindex="0">
                                             <?php echo get_the_title() ?>
                                         </h1>
-                                        <p class="lead">
+                                        <p class="lead"
+                                            tabindex="0">
                                             <?php echo get_the_excerpt() ?>
                                         </p>
                                         <a 
-                                            class="btn btn-primary stretched-link
+                                            class="btn btn-primary
                                                     align-self-end"
                                             href="<?php the_permalink() ?>">
                                             Ler mais
@@ -71,14 +77,16 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                 ?>
             </div>
             <a class="carousel-control-prev" href="#citeicarousel-<?php echo $id; ?>" 
-                role="button" data-slide="prev">
+                role="button" aria-label="Item anterior"
+                aria-controls="citeicarousel<?php echo $id ?>-inner"
+                data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#citeicarousel-<?php echo $id; ?>" role="button" 
+            <a class="carousel-control-next" href="#citeicarousel-<?php echo $id; ?>" 
+                role="button" aria-label="Próximo item"
+                aria-controls="citeicarousel<?php echo $id ?>-inner"
                 data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
             </a>
         </div>
 <?php

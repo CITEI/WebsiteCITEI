@@ -20,7 +20,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
             backdrop-filter: brightness(0.4);
             flex: 1;
         ">
-        <div class="py-4 container">
+        <div class="py-4 container sr-read-children"
+            tabindex="-1">
             <h1 class="display-4 text-break"><?php echo $args['title'] ?></h1>
             <p class="lead"><?php echo $args['description'] ?>
         </div> 

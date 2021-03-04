@@ -7,7 +7,10 @@ Purpose: Separates a piece of the page with full width, but displays
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>
-<div class="jumbotron-fluid py-4 d-flex" style="
+<?php
+    $id = new_id();
+?>
+<div class="jumbotron-fluid py-4 d-flex" tabindex="-1" style="
         background-color: <?php
             $color = "";
             if(!isset($attributes['bgcolor']))
@@ -23,8 +26,10 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
             }
         ?>
         min-height: <?php echo $attributes['min-height']; ?>px">
-    <div class="container text-center text-justify my-auto" style="
+    <section class="container text-center text-justify my-auto" 
+        role="section" tabindex="-1" 
+        style="
         <?php echo 'color: ', black_or_white($color), ';';?>">
         <?php echo $attributes['blocos']; ?>
-    </div>
+    </section>
 </div>

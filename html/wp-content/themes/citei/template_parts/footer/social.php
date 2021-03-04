@@ -25,7 +25,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     }
     if ($list != '')
     { ?>
-        <h5 class="text-uppercase">Redes sociais</h5>
+        <h5 id="socialmedia-title" class="text-uppercase">Redes sociais</h5>
         <ul class="list-unstyled m-0 my-2">
             <?php echo $list ?>
         </ul>
