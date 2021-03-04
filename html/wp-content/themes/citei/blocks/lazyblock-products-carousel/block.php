@@ -61,7 +61,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                                             <?php echo get_the_excerpt() ?>
                                         </p>
                                         <a 
-                                            class="btn btn-primary
+                                            class="btn btn-primary stretched-link
                                                     align-self-end"
                                             href="<?php the_permalink() ?>">
                                             Ler mais

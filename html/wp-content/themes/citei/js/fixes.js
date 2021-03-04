@@ -7,7 +7,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
  function fixTabIndexes()
  {
    $('.wp-block-column , .wp-block-group__inner-container , \
-        .wp-block-image , .sr-read-children'
+        .wp-block-image > figure , .sr-read-children'
         ).children('h1, h2, h3, h4, h5, img, p'
         ).attr("tabindex", "0")
    $('#pojo-a11y-toolbar, .pojo-a11y-toolbar-toggle-link').attr("role", "").attr("tabindex", "-1")

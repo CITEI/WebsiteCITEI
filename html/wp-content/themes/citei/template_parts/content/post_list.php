@@ -27,9 +27,9 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                     <div class="row mx-auto justify-content-center">
                         <?php if(has_post_thumbnail())
                         {?>
-                            <div class="col-auto p-2 my-auto">
-                                <a href="<?php echo get_the_permalink(); ?>">
-                                    <img tabindex="-1"
+                            <div class="col-auto p-2 my-auto" aria-hidden="true">
+                                <a tabindex="-1" href="<?php echo get_the_permalink(); ?>">
+                                    <img
                                         src="<?php echo get_the_post_thumbnail_url(); ?>" 
                                         alt="<?php echo get_post_meta( get_post_thumbnail_id(), 
                                                         '_wp_attachment_image_alt', true); ?>"
@@ -42,7 +42,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                             role="row" tabindex="-1">
                             <h4><?php echo get_the_title(); ?></h4>
                             <p><?php echo get_the_excerpt(); ?></p>
-                            <a class="btn btn-primary align-self-end" 
+                            <a class="btn btn-primary align-self-end stretched-link" 
                                 role="complementary" tabindex="0"
                                 href="<?php echo get_the_permalink(); ?>">
                                 Ler mais

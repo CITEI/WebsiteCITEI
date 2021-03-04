@@ -22,9 +22,9 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                     src="<?php echo $profile['picture']['url'] ?>" 
                     alt="<?php echo $profile['picture']['alt'] ?>">
                 <div class="card-body">
-                    <a class="text-reset"
+                    <a class="text-reset stretched-link"
                         tabindex="0" role="link"
-                        href="<?php echo $profile['url'] ?>">
+                        href="<?php if(isset($profile['url'])) echo $profile['url'] ?>">
                         <h5 class="card-title">
                             <?php echo $profile['title'] ?>
                         </h5>
