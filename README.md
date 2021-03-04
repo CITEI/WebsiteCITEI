@@ -2,20 +2,20 @@
 This is the source code of the website built for CITEI (Centro de Inovação Tecnológica e Educação Inclusiva - Center of Inclusive Education and Technological Innovation).
 
 ## What is included?
-Main
+**Main**
 * Custom Theme
     * Custom Blocks (LazyBlocks)
 * Custom Post Types (located at 'exported settings/custom_post...')
     * Custom Fields (located at 'exported_settings/advanced...')
 
-Plugins
+**Plugins**
 * LazyBlocks (Required)
 * Advanced Custom Fields (Required)
 * Custom Post Types (Required)
 * OneClickAccessibility (Required)
 * Block Manager (Required)
 
-Additional
+**Additional**
 * VLibras (Brazilian signal language interpreter)
 
 ## What do I have to know before using this theme?
@@ -32,7 +32,7 @@ For this theme, we have two main post templates, one related to a person's profi
 Additionally, these post templates are used in 5 different post types, which are: Grupos de Pesquisa (Research Groups), Produtos (Products), Projetos (Projects), Bolsistas (Students), and Pesquisadores (Researchers), the first three using products template, and the last two the person's template. 
 
 ### Why do I have to follow these guidelines?
-Because it will force you to make a concise design and easy use website layout. But more than that, THE THEME IS TOTALLY ACCESSIBLE, even for screenreaders, and it requires these objects being used like this to let accessibility guaranteed.
+Because it will force you to make a concise design and easy use website layout. But more than that, **THE THEME IS TOTALLY ACCESSIBLE**, even for screenreaders, and it requires these objects being used like this to let accessibility guaranteed.
 
 ### Is this theme responsive on different screen types?
 Totally, it uses bootstrap for styles, and its functionalities to make it work well.
