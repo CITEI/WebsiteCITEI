@@ -10,7 +10,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     $list = '';
     foreach($args as $smedia)
     {
-        if ($smedia['url'] != '')
+        if ('' != $smedia['url'])
         {
             $list .= <<< EOD
                 <li class="mt-2">
@@ -23,7 +23,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
             EOD;
         }
     }
-    if ($list != '')
+    if ('' != $list)
     { ?>
         <h5 id="socialmedia-title" class="text-uppercase">Redes sociais</h5>
         <ul class="list-unstyled m-0 my-2">

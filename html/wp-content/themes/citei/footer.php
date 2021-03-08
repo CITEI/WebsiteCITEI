@@ -5,7 +5,7 @@ Purpose: Contains footer layout
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>
-        </div>
+        </main>
         <footer class="site-footer bg-dark navbar navbar-expand 
             mt-auto w-100 container-fluid d-flex flex-column text-white p-0">
             <div class="row w-100 py-4 px-lg-5" tabindex="-1">

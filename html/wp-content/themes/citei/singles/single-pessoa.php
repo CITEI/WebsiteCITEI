@@ -11,10 +11,10 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     the_post();
 ?>
 
-<main class="container bg-white text-center">
+<section class="container bg-white text-center">
     <h1 class="mb-4" tabindex="0"><?php echo get_the_title() ?></h1>
     <div class="row mx-auto pb-3">
-        <div class="col-md-3 pb-3">
+        <aside class="col-md-3 pb-3">
             <div class="card text-left">
                 <img class="card-img-top"
                     src="<?php echo get_the_post_thumbnail_url(); ?>" 
@@ -30,8 +30,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                     </div>
                     <div class="mb-3">
                         <?php 
-                            echo get_template_part('template_parts/content/participation-tags', 
-                                '', array(
+                            echo get_template_part('template_parts/content/participation-tags' , ''
+                                , array(
                                     'post_type' => 'produtos',
                                     'label' => 'Produtos',
                                     'tag'   => get_the_title()
@@ -41,8 +41,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                     
                     <div class="mb-3">
                         <?php  
-                            echo get_template_part('template_parts/content/participation-tags', 
-                                '', array(
+                            echo get_template_part('template_parts/content/participation-tags' , ''
+                                , array(
                                     'post_type' => 'projetos',
                                     'label' => 'Projetos',
                                     'tag'   => get_the_title()
@@ -51,8 +51,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                     </div>
                     <div>
                         <?php  
-                            echo get_template_part('template_parts/content/participation-tags', 
-                                '', array(
+                            echo get_template_part('template_parts/content/participation-tags', ''
+                                , array(
                                     'post_type' => 'grupos_de_pesquisa',
                                     'label' => 'Grupos de pesquisa',
                                     'tag'   => get_the_title()
@@ -61,11 +61,11 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md text-left sr-read-children">
+        </aside>
+        <article class="col-md text-left sr-read-children">
             <?php echo get_the_content(); ?>
-        </div>
+        </article>
     </div>
-</main>
+</section>
 
 <?php get_footer(); ?>

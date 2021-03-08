@@ -20,7 +20,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                     <li class="nav-item" role="none">
                         <a class="nav-link text-nowrap" role="menuitem"
                             href="<?php echo $item['url'] ?>">
-                            <?php echo $item['title'] ?>
+                            <?php echo _e($item['title']) ?>
                         </a>
                     </li>
                 <?php } ?>

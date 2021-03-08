@@ -9,14 +9,12 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
 get_header();
 ?>
 
-<main>
 <?php get_template_part('template_parts/content/post_list', '',
     array(
         'yes_title' => post_type_archive_title( '', false ),
         'no_title' => "Sem itens nessa categoria."
     ));
 ?>
-</main>
 
 <?php
 get_footer();

@@ -10,7 +10,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
 <?php
     $id = new_id();
 ?>
-<div class="jumbotron-fluid py-4 d-flex" tabindex="-1" style="
+<section class="jumbotron-fluid py-4 d-flex" tabindex="-1" style="
         background-color: <?php
             $color = "";
             if(!isset($attributes['bgcolor']))
@@ -26,10 +26,10 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
             }
         ?>
         min-height: <?php echo $attributes['min-height']; ?>px">
-    <section class="container text-center text-justify my-auto" 
+    <div class="container text-center text-justify my-auto" 
         role="section" tabindex="-1" 
         style="
         <?php echo 'color: ', black_or_white($color), ';';?>">
         <?php echo $attributes['blocos']; ?>
-    </section>
-</div>
+    </div>
+</section>

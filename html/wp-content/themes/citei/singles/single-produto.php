@@ -11,16 +11,16 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     the_post();
     $cover = get_field("coverimg");
 ?>
-<div class="">
+<section>
     <?php
-        get_template_part('template_parts/content/cover', 
-            '', array(
+        get_template_part('template_parts/content/cover', ''
+            , array(
                 'imgurl' => $cover['url'],
                 'title' => get_the_title(),
                 'description' => get_the_excerpt()
             ));
     ?>
-</div>
+</section>
 <?php the_content() ?>
 
 <?php get_footer(); ?>

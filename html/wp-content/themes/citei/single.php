@@ -9,13 +9,13 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
 get_header();
 
 ?>
-<main class="container text-center">
+<article class="container text-center">
     <?php the_post(); ?>
     <h1><?php echo get_the_title(); ?>
     <div class="text-left">
         <?php the_content() ?>
     </div>
-</main>
+</article>
 
 <?php
 get_footer();

@@ -60,9 +60,9 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     else
     { 
 ?>
-        <div class="container my-4 text-center">
+        <section class="container my-4 text-center">
             <h2 tabindex="0"><?php echo $args['no_title'] ?></h2>
-        </div>
+        </section>
 <?php
     }
 ?>
