@@ -17,7 +17,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                 $color = "#fff";
             else
                 $color = $attributes['bgcolor'];
-            echo $color, ";";
+            echo esc_attr($color), ";";
             if(isset($attributes['bgimage']['url']))
             {
                 echo "\nbackground: url(",  esc_url($attributes['bgimage']['url'] ), ");",
@@ -25,11 +25,11 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                         "\nbackground-position: center;";
             }
         ?>
-        min-height: <?php echo $attributes['min-height']; ?>px">
-    <div class="container text-center text-justify my-auto" 
+        min-height: <?php echo esc_attr($attributes['min-height']); ?>px">
+    <div class="container text-center text-justify my-auto sr-read-children" 
         role="section" tabindex="-1" 
         style="
         <?php echo 'color: ', black_or_white($color), ';';?>">
-        <?php echo $attributes['blocos']; ?>
+        <?php echo $attributes['blocks']; ?>
     </div>
 </section>

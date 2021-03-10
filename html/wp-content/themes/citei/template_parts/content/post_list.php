@@ -11,10 +11,13 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     {
 ?>
         <div class="container my-4 text-center">
-            <h1 tabindex="-1"><?php echo $args['yes_title'] ?></h1>
+            <h1 tabindex="-1">
+                <?php echo esc_html($args['yes_title']) ?>
+            </h1>
         </div>
     <ul role="list" tabindex="0"  class="p-0 mb-0"
-        aria-label="<?php echo $args['yes_title'] ?>" class="list-unstyled">
+        aria-label="<?php echo esc_attr($args['yes_title']) ?>" 
+        class="list-unstyled">
     <?php
         while(have_posts())
         { 
@@ -45,7 +48,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                             <a class="btn btn-primary align-self-end" 
                                 role="complementary" tabindex="0"
                                 href="<?php echo get_the_permalink(); ?>">
-                                Ler mais
+                                <?php _e("Read more", 'citei') ?>
                             </a>
                         </div>
                     </div>
@@ -61,7 +64,9 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     { 
 ?>
         <section class="container my-4 text-center">
-            <h2 tabindex="0"><?php echo $args['no_title'] ?></h2>
+            <h2 tabindex="0">
+                <?php echo esc_html($args['no_title']) ?>
+            </h2>
         </section>
 <?php
     }

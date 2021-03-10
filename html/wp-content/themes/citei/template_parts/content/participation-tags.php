@@ -19,8 +19,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
         { 
             ?>
             <div tabindex="0"
-                aria-label="<?php echo $args['label'] ?>">
-                <h4><?php echo $args['label'] ?></h4>
+                aria-label="<?php echo esc_attr($args['label']) ?>">
+                <h4><?php echo esc_html($args['label']) ?></h4>
                 <div class="row mx-auto">
                     <?php 
                         while($posts->have_posts())

@@ -18,10 +18,10 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
         <div id="citeicarousel-<?php echo $id; ?>" 
             class="carousel slide child-expand" 
             data-interval="false"
-            aria-label="Carrossel de <?php echo $attributes['post_type'] ?>"
+            aria-label="Carrossel de <?php echo esc_attr($attributes['post_type']) ?>"
             tabindex="0"
             style="
-                min-height: <?php echo $attributes['min-height'] ?>px;
+                min-height: <?php echo esc_attr($attributes['min-height']) ?>px;
                 ">
             <div id="citeicarousel<?php echo $id ?>-inner"
                 class="carousel-inner expanded-child" style="">
@@ -33,15 +33,13 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                         $cover = get_field("coverimg", get_the_ID());
                 ?>
                         <div class="carousel-item w-100 h-100
-                            <?php echo $active; ?>">
+                            <?php echo esc_attr($active); ?>">
                             <div class="w-100 h-100 cover"
                                 style="
-                                    background: url(<?php echo $cover['url'] ?>);
+                                    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                                        url(<?php echo esc_url($cover['url']) ?>);
                                 ">
-                                <div class="h-100" 
-                                    style="
-                                        backdrop-filter: brightness(0.5);
-                                        ">
+                                <div class="h-100" >
                                     <div class="mx-auto h-100 d-flex flex-column
                                                 text-white py-5 justify-content-center
                                                 align-items-start"
@@ -50,21 +48,21 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                                         ">
                                         <h1 class="text-lowercase"
                                             aria-hidden="true">
-                                            <?php echo $attributes['post_type'] ?>
+                                            <?php esc_html_e(ucfirst($attributes['post_type']), 'citei') ?>
                                         </h1>
                                         <h1 class="display-3 text-break"
                                             tabindex="0">
-                                            <?php echo get_the_title() ?>
+                                            <?php echo esc_html(get_the_title()) ?>
                                         </h1>
                                         <p class="lead"
                                             tabindex="0">
-                                            <?php echo get_the_excerpt() ?>
+                                            <?php echo esc_html(get_the_excerpt()) ?>
                                         </p>
                                         <a 
                                             class="btn btn-primary
                                                     align-self-end"
-                                            href="<?php the_permalink() ?>">
-                                            Ler mais
+                                            href="<?php esc_url(the_permalink()) ?>">
+                                            <?php _e('Read more', 'citei') ?>
                                         </a>
                                     </div>
                                 </div>
@@ -77,13 +75,13 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                 ?>
             </div>
             <a class="carousel-control-prev" href="#citeicarousel-<?php echo $id; ?>" 
-                role="button" aria-label="Item anterior"
+                role="button" aria-label="<?php _e('Previous item', 'citei') ?>"
                 aria-controls="citeicarousel<?php echo $id ?>-inner"
                 data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </a>
             <a class="carousel-control-next" href="#citeicarousel-<?php echo $id; ?>" 
-                role="button" aria-label="Próximo item"
+                role="button" aria-label="<? _e('Next item', 'citei') ?>"
                 aria-controls="citeicarousel<?php echo $id ?>-inner"
                 data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>

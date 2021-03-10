@@ -11,7 +11,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?php wp_head(); ?>
-        <title><?php bloginfo('name'); ?></title>
+        <title><?php esc_html(bloginfo('name')); ?></title>
     </head>
     <body class="min-vh-100 d-flex flex-column" <?php body_class(); ?>>
         <?php get_template_part( 'template_parts/header/skips' ); ?>

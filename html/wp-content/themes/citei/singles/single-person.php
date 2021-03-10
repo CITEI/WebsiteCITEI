@@ -1,7 +1,7 @@
 <?php
 /*
 Type: Single
-Name: Pessoa
+Name: Person
 Purpose: Displays a post about a person
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
@@ -22,8 +22,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                                     '_wp_attachment_image_alt', true); ?>"
                     />
                 <div class="card-body" >
-                    <div tabindex="0" aria-label="Resumo">
-                        <h4 tabindex="-1">Resumo</h4>
+                    <div tabindex="0" aria-label="<?php _e('Excerpt', 'citei') ?>">
+                        <h4 tabindex="-1"><?php _e('Excerpt', 'citei') ?></h4>
                         <p tabindex="0">
                             <?php echo get_the_excerpt(); ?>
                         </p>
@@ -32,8 +32,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                         <?php 
                             echo get_template_part('template_parts/content/participation-tags' , ''
                                 , array(
-                                    'post_type' => 'produtos',
-                                    'label' => 'Produtos',
+                                    'post_type' => 'products',
+                                    'label' => __('Products', 'citei'),
                                     'tag'   => get_the_title()
                                 )); 
                         ?>
@@ -43,8 +43,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                         <?php  
                             echo get_template_part('template_parts/content/participation-tags' , ''
                                 , array(
-                                    'post_type' => 'projetos',
-                                    'label' => 'Projetos',
+                                    'post_type' => 'projects',
+                                    'label' => __('Projects', 'citei'),
                                     'tag'   => get_the_title()
                                 ));
                         ?>
@@ -53,8 +53,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                         <?php  
                             echo get_template_part('template_parts/content/participation-tags', ''
                                 , array(
-                                    'post_type' => 'grupos_de_pesquisa',
-                                    'label' => 'Grupos de pesquisa',
+                                    'post_type' => 'research_groups',
+                                    'label' => __('Research Groups', 'citei'),
                                     'tag'   => get_the_title()
                                 ));
                         ?>

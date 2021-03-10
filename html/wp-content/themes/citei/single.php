@@ -11,7 +11,7 @@ get_header();
 ?>
 <article class="container text-center">
     <?php the_post(); ?>
-    <h1><?php echo get_the_title(); ?>
+    <h1><?php echo esc_html(get_the_title()); ?>
     <div class="text-left">
         <?php the_content() ?>
     </div>

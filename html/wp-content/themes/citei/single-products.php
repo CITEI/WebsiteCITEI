@@ -1,8 +1,9 @@
+
 <?php
 /*
 Type: Single
-Name: Pesquisadores
+Name: Products
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>
-<?php include_once('singles/single-pessoa.php') ?>
+<?php include_once('singles/single-product.php') ?>

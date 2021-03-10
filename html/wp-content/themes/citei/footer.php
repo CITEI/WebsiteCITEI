@@ -14,9 +14,9 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                             sr-read-children" 
                             tabindex="-1" role="contentinfo" >
                     <h5 class="text-uppercase">
-                        <?php echo bloginfo('name') ?>
+                        <?php echo esc_html(bloginfo('name')) ?>
                     </h5>
-                    <p class=""><?php echo bloginfo('description') ?></p>
+                    <p class=""><?php echo esc_html(bloginfo('description')) ?></p>
                 </div>
                 <div class="col-lg-3 py-2 px-4
                         col-md-6 col-xs-12 text-lg-left text-center"
@@ -37,10 +37,12 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
             <div class="w-100 p-2 text-white mt-auto"
                 style="background: rgba(0,0,0,0.1)">
                 <div class="container text-center py-3">
-                    <a><b>2021 - <?php echo bloginfo('name'); ?></b></a>
+                    <h5><b>2021 - <?php echo esc_html(bloginfo('name')); ?></b></h5>
                     <a class="text-muted" href="#logo-link" aria-controls="logo-link"
                         tabindex="0"
-                        style="font-size: 0.8rem;">Rolar para o topo</a>
+                        style="font-size: 0.8rem;">
+                            <?php _e("Scroll to top", 'citei') ?>
+                    </a>
                 </div>
             </div>
         </footer>

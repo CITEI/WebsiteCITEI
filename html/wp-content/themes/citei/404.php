@@ -9,7 +9,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     get_header();
 ?>
 <section class="container">
-    <h5>Página não encontrada!</h5>
+    <h5><?php _e("Page not found!", 'citei') ?></h5>
 </section>
 <?php
     get_footer();

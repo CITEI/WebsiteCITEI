@@ -13,17 +13,19 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     {
         function get_button($id, $label, $active="", $aria="false")
         {
+            $label_html = esc_html($label);
+            $label_attr = esc_attr($label);
             return <<< EOD
                 <li class="mx-3">
                     <a class="nav-link {$active} rounded-pill border-0 text-reset
                         px-4" 
-                    id="citeitt{$id}-{$label}-tab" 
+                    id="citeitt{$id}-{$label_attr}-tab" 
                     data-toggle="tab" 
-                    href="#citeitt{$id}-{$label}" 
+                    href="#citeitt{$id}-{$label_attr}" 
                     role="tab" 
-                    aria-controls="citeitt{$id}-{$label}" 
+                    aria-controls="citeitt{$id}-{$label_attr}" 
                     aria-selected="{$aria}">
-                        <u>{$label}</u>
+                        <u>{$label_html}</u>
                     </a>
                 </li>
             EOD;
@@ -34,11 +36,13 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     {
         function get_tab($id, $text, $label, $active="")
         {
+            $label = esc_attr($label);
+            $text = esc_html($text);
             return <<< EOD
                 <div class="tab-pane show fade {$active} text-reset" 
                     id="citeitt{$id}-{$label}" 
                     role="tabpanel"
-                    tabindex="-1">
+                    tabindex="0">
                         <p>{$text}</p>
                 </div> 
             EOD;
@@ -61,7 +65,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
             $contents .= get_tab($id, $tab['text'], $tab['label']);
         } 
 ?>
-        <div tabindex="0" aria-label="Guias com texto">
+        <div tabindex="0" aria-label="<?php _e("Text tabs", 'citei') ?>">
             <div class="text-reset nav-pills" tabindex="-1">
                 <ul class="nav nav-tabs border-0 justify-content-center mb-2" 
                     id="citeitt<?php echo $id ?>-nav-tab" 

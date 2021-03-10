@@ -8,7 +8,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>
 <div class="row mx-auto justify-content-center"
-    tabindex="0" aria-label="Colunas com perfis">
+    tabindex="0" aria-label="<?php _e('Profile columns', 'citei') ?>">
 <?php 
     foreach ($attributes['profiles'] as $profile)
     { ?>
@@ -19,17 +19,17 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                     style="
                     border-radius: 50%;
                     max-width: 230px;"
-                    src="<?php echo $profile['picture']['url'] ?>" 
-                    alt="<?php echo $profile['picture']['alt'] ?>">
+                    src="<?php echo esc_url($profile['picture']['url']) ?>" 
+                    alt="<?php echo esc_attr($profile['picture']['alt']) ?>">
                 <div class="card-body">
                     <a class="text-reset"
                         tabindex="0" role="link"
-                        href="<?php if(isset($profile['url'])) echo $profile['url'] ?>">
+                        href="<?php if(isset($profile['url'])) echo esc_url($profile['url']) ?>">
                         <h4 class="card-title">
-                            <?php echo $profile['title'] ?>
+                            <?php echo esc_html($profile['title']) ?>
                         </h4>
                     </a>
-                    <p class="card-text"><?php echo $profile['description'] ?></p>
+                    <p class="card-text"><?php echo esc_html($profile['description']) ?></p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,162 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CITEI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-10 22:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.1; wp-5.6.1\n"
+"X-Domain: citei"
+
+#: functions.php:1139
+msgid "A large image to visually summarize the post content."
+msgstr ""
+
+#. Name of the theme
+msgid "CITEI"
+msgstr ""
+
+#: functions.php:1132
+msgid "Cover"
+msgstr ""
+
+#: functions.php:1136
+msgid "Cover image"
+msgstr ""
+
+#: singles/single-person.php:25 singles/single-person.php:26
+msgid "Excerpt"
+msgstr ""
+
+#: template_parts/header/logo.php:14
+msgid "Go to home"
+msgstr ""
+
+#: template_parts/footer/menu.php:16
+msgid "Home"
+msgstr ""
+
+#: functions.php:126
+msgid "Main Menu"
+msgstr ""
+
+#: blocks/lazyblock-carousel-gallery/block.php:56
+msgid "Next image"
+msgstr ""
+
+#: blocks/lazyblock-products-carousel/block.php:86
+msgid "Next item"
+msgstr ""
+
+#. Author of the theme
+msgid "Nickolas da Rocha Machado &amp; Natalia Zambe da Silva"
+msgstr ""
+
+#: archive.php:15
+msgid "No items to show within this category."
+msgstr ""
+
+#: search.php:16
+msgid "No items were found"
+msgstr ""
+
+#: functions.php:101
+msgid "No menu items"
+msgstr ""
+
+#: 404.php:12
+msgid "Page not found!"
+msgstr ""
+
+#: blocks/lazyblock-carousel-gallery/block.php:51
+msgid "Previous image"
+msgstr ""
+
+#: blocks/lazyblock-products-carousel/block.php:80
+msgid "Previous item"
+msgstr ""
+
+#: functions.php:308
+msgid "Product"
+msgstr ""
+
+#: functions.php:307 functions.php:312 singles/single-person.php:36
+msgid "Products"
+msgstr ""
+
+#: blocks/lazyblock-profile-columns/block.php:11
+msgid "Profile columns"
+msgstr ""
+
+#: functions.php:379
+msgid "Project"
+msgstr ""
+
+#: functions.php:378 functions.php:383 singles/single-person.php:47
+msgid "Projects"
+msgstr ""
+
+#: blocks/lazyblock-products-carousel/block.php:67
+#: template_parts/content/post_list.php:51
+msgid "Read more"
+msgstr ""
+
+#: functions.php:415
+msgid "Research Group"
+msgstr ""
+
+#: functions.php:414 functions.php:419 singles/single-person.php:57
+msgid "Research Groups"
+msgstr ""
+
+#: functions.php:451
+msgid "Researcher"
+msgstr ""
+
+#: functions.php:450 functions.php:455
+msgid "Researchers"
+msgstr ""
+
+#: functions.php:344
+msgid "Scholar"
+msgstr ""
+
+#: functions.php:343 functions.php:348
+msgid "Scholars"
+msgstr ""
+
+#: footer.php:44
+msgid "Scroll to top"
+msgstr ""
+
+#: searchform.php:18
+msgid "Search"
+msgstr ""
+
+#: search.php:15
+msgid "Search results"
+msgstr ""
+
+#: template_parts/footer/menu.php:10
+msgid "Site map"
+msgstr ""
+
+#: template_parts/footer/social.php:32
+msgid "Social media"
+msgstr ""
+
+#: blocks/lazyblock-text-tabs/block.php:68
+msgid "Text tabs"
+msgstr ""
+
+#: template_parts/header/navmenu.php:12
+msgid "Toggle menu"
+msgstr ""

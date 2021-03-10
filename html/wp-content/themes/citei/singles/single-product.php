@@ -1,7 +1,7 @@
 <?php
 /*
 Type: Single
-Name: Produtos
+Name: Product
 Purpose: Displays  a post about a product
 Author: Nickolas da Rocha Machado & Natalia Zambe
  */
