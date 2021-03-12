@@ -11,7 +11,7 @@ get_header();
 
 <?php get_template_part('template_parts/content/post_list', '',
     array(
-        'yes_title' => post_type_archive_title( '', false ),
+        'yes_title' => __(post_type_archive_title( '', false ), 'citei'),
         'no_title' => __('No items to show within this category.', 'citei')
     ));
 ?>
