@@ -19,10 +19,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
             class="carousel slide child-expand" 
             data-interval="false"
             aria-label="Carrossel de <?php echo esc_attr($attributes['post_type']) ?>"
-            tabindex="0"
-            style="
-                min-height: <?php echo esc_attr($attributes['min-height']) ?>px;
-                ">
+            tabindex="0">
             <div id="citeicarousel<?php echo $id ?>-inner"
                 class="carousel-inner expanded-child" style="">
                 <?php
@@ -50,7 +47,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                                             aria-hidden="true">
                                             <?php esc_html_e(ucfirst($attributes['post_type']), 'citei') ?>
                                         </h1>
-                                        <h1 class="display-3 text-break"
+                                        <h1 class="display-4 text-break"
                                             tabindex="0">
                                             <?php echo esc_html(get_the_title()) ?>
                                         </h1>

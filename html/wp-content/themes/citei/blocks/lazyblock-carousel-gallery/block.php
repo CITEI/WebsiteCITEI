@@ -14,11 +14,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
 ?>
         <div id="citeicarouselgallery-<?php echo $id; ?>" 
             class="carousel slide child-expand rounded
-                d-flex justify-content-center" 
-            data-interval="false"
-            style="
-                height: <?php echo esc_attr($attributes['height']) ?>px;
-                ">
+                d-flex justify-content-center py-2" 
+            data-interval="false">
             <div class="carousel-inner expanded-child" style="
                 max-width: 70%;
             ">

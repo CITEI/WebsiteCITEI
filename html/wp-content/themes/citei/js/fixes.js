@@ -43,9 +43,36 @@ jQuery.noConflict()
     `)
   }
 
+  function fixCarouselsSize()
+  {
+    $('.carousel-inner').each((i, objInner) => {
+      inner = $(objInner)
+      inner.css('height', '')
+      let max_height = inner.height()
+
+      inner.children().each((j, objItem) => {
+        item = $(objItem)
+        if(item.css('display') == 'none')
+        {
+          item.css('display', 'block')
+          let height = item.height()
+          if(height > max_height)
+            max_height = height
+          item.css('display', '')
+        }
+      })
+      inner.css('height', max_height)
+    })
+  }
+
   $(document).ready(() => {
       fixTabIndexes()
       bootstrapFileBlock()
       vlibrasFix()
+      fixCarouselsSize()
+  })
+
+  $(window).resize(() => {
+    fixCarouselsSize()
   })
 })
