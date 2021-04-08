@@ -75,7 +75,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                 </ul>
             </div>
             <div class="tab-content text-reset py-3" 
-                id="citeitt<?echo $id ?>-tab-content" 
+                id="citeitt<?php echo $id; ?>-tab-content" 
                 tabindex="-1">
                 <?php echo $contents; ?>
             </div>

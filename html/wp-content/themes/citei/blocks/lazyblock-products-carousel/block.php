@@ -78,7 +78,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </a>
             <a class="carousel-control-next" href="#citeicarousel-<?php echo $id; ?>" 
-                role="button" aria-label="<? _e('Next item', 'citei') ?>"
+                role="button" aria-label="<?php _e('Next item', 'citei') ?>"
                 aria-controls="citeicarousel<?php echo $id ?>-inner"
                 data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
