@@ -17,6 +17,7 @@ This is the source code of the website built for CITEI (Centro de Inovação Tec
 
 **Additional**
 * VLibras (Brazilian signal language interpreter)
+* Brazilian Government Bar
 
 ## What do I have to know before using this theme?
 First, the theme needs some plugins or the interface won't work without them. But don't worry, TGM Plugin is already configured for displaying alerts about not-installed plugins. Once you activate the theme it will help you install them.

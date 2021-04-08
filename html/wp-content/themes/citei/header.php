@@ -15,6 +15,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
     </head>
     <body class="min-vh-100 d-flex flex-column" <?php body_class(); ?>>
         <?php get_template_part( 'template_parts/header/skips' ); ?>
+        <?php get_template_part( 'template_parts/header/brazil-government-bar' ); ?>
         <header class="navbar navbar-expand-md navbar-light bg-white
                 " tabindex="-1">
             <div class="row row-spacing justify-content-center mx-auto px-xl-4"

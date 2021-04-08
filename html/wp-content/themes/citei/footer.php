@@ -48,7 +48,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
         </footer>
 
 
+        <?php get_template_part('template_parts/footer/brazil-government-bar-script'); ?>
         <?php wp_footer(); ?>
-        <?php get_template_part('template_parts/footer/vlibras'); ?>
     </body>
 </html>

@@ -4,6 +4,9 @@ Type: Template_part
 Name: vlibras
 Purpose: Adds vlibras plugin
 Author: Nickolas da Rocha Machado & Natalia Zambe
+
+DEPRECATED
+Brazilian government bar already includes vlibras
  */
 ?>
   <div vw class="enabled">
