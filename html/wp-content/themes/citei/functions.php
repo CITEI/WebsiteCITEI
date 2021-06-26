@@ -6,6 +6,21 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
  */
 ?>
 <?php 
+/* Languages setup */
+function citei_localisation(){
+
+    function citei_localised( $locale ) {
+        if ( isset( $_GET['l'] ) ) {
+            return sanitize_key( $_GET['l'] );
+        }
+        return $locale;
+    }
+    add_filter( 'locale', 'citei_localised' );
+
+    load_theme_textdomain( 'citei', get_template_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'citei_localisation' );
+
 /* Custom support */
 add_theme_support( 'custom-logo' );
 add_theme_support( 'post-thumbnails' );

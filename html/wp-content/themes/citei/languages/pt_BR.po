@@ -1,14 +1,13 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: CITEI\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-10 22:08+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: 2021-03-10 19:04+0000\n"
+"PO-Revision-Date: 2021-03-10 22:09+0000\n"
+"Last-Translator: \n"
+"Language-Team: Português do Brasil\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,35 +25,35 @@ msgstr ""
 
 #: functions.php:1132
 msgid "Cover"
-msgstr ""
+msgstr "Cover"
 
 #: functions.php:1136
 msgid "Cover image"
-msgstr ""
+msgstr "Imagem de cover"
 
 #: singles/single-person.php:25 singles/single-person.php:26
 msgid "Excerpt"
-msgstr ""
+msgstr "Resumo"
 
 #: template_parts/header/logo.php:14
 msgid "Go to home"
-msgstr ""
+msgstr "Ir para início"
 
 #: template_parts/footer/menu.php:16
 msgid "Home"
-msgstr ""
+msgstr "Início"
 
 #: functions.php:126
 msgid "Main Menu"
-msgstr ""
+msgstr "Menu Principal"
 
 #: blocks/lazyblock-carousel-gallery/block.php:56
 msgid "Next image"
-msgstr ""
+msgstr "Próxima imagem"
 
 #: blocks/lazyblock-products-carousel/block.php:86
 msgid "Next item"
-msgstr ""
+msgstr "Próximo item"
 
 #. Author of the theme
 msgid "Nickolas da Rocha Machado &amp; Natalia Zambe da Silva"
@@ -62,101 +61,101 @@ msgstr ""
 
 #: archive.php:15
 msgid "No items to show within this category."
-msgstr ""
+msgstr "Sem itens para mostrar nessa categoria"
 
 #: search.php:16
 msgid "No items were found"
-msgstr ""
+msgstr "Nenhum item encontrado"
 
 #: functions.php:101
 msgid "No menu items"
-msgstr ""
+msgstr "Sem itens de menu"
 
 #: 404.php:12
 msgid "Page not found!"
-msgstr ""
+msgstr "Página não encontrada!"
 
 #: blocks/lazyblock-carousel-gallery/block.php:51
 msgid "Previous image"
-msgstr ""
+msgstr "Imagem anterior"
 
 #: blocks/lazyblock-products-carousel/block.php:80
 msgid "Previous item"
-msgstr ""
+msgstr "Item anterior"
 
 #: functions.php:308
 msgid "Product"
-msgstr ""
+msgstr "Produto"
 
 #: functions.php:307 functions.php:312 singles/single-person.php:36
 msgid "Products"
-msgstr ""
+msgstr "Produtos"
 
 #: blocks/lazyblock-profile-columns/block.php:11
 msgid "Profile columns"
-msgstr ""
+msgstr "Colunas de perfis"
 
 #: functions.php:379
 msgid "Project"
-msgstr ""
+msgstr "Projeto"
 
 #: functions.php:378 functions.php:383 singles/single-person.php:47
 msgid "Projects"
-msgstr ""
+msgstr "Projetos"
 
 #: blocks/lazyblock-products-carousel/block.php:67
 #: template_parts/content/post_list.php:51
 msgid "Read more"
-msgstr ""
+msgstr "Ler mais"
 
 #: functions.php:415
 msgid "Research Group"
-msgstr ""
+msgstr "Grupo de Pesquisa"
 
 #: functions.php:414 functions.php:419 singles/single-person.php:57
 msgid "Research Groups"
-msgstr ""
+msgstr "Grupos de Pesquisa"
 
 #: functions.php:451
 msgid "Researcher"
-msgstr ""
+msgstr "Pesquisador"
 
 #: functions.php:450 functions.php:455
 msgid "Researchers"
-msgstr ""
+msgstr "Pesquisadores"
 
 #: functions.php:344
 msgid "Scholar"
-msgstr ""
+msgstr "Bolsista"
 
 #: functions.php:343 functions.php:348
 msgid "Scholars"
-msgstr ""
+msgstr "Bolsistas"
 
 #: footer.php:44
 msgid "Scroll to top"
-msgstr ""
+msgstr "Rolar para o topo"
 
 #: searchform.php:18
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: search.php:15
 msgid "Search results"
-msgstr ""
+msgstr "Resultados da busca"
 
 #: template_parts/footer/menu.php:10
 msgid "Site map"
-msgstr ""
+msgstr "Mapa do site"
 
 #: template_parts/footer/social.php:32
 msgid "Social media"
-msgstr ""
+msgstr "Redes sociais"
 
 #: blocks/lazyblock-text-tabs/block.php:68
 msgid "Text tabs"
-msgstr ""
+msgstr "Abas com texto"
 
 #: template_parts/header/navmenu.php:12
 msgid "Toggle menu"
-msgstr ""
+msgstr "Alternar menu"
