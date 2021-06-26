@@ -9,11 +9,14 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
 <?php 
     if(has_custom_logo())
     {
+       $custom_logo_id = get_theme_mod( 'custom_logo' );
+       $custom_logo_data = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+       $custom_logo_url = $custom_logo_data[0];
 ?>
         <a id="logo-link" href="<?php echo get_home_url() ?>" 
             role="link" aria-label="<?php _e('Go to home', 'citei') ?>"
             tabindex="100">
-            <img src="<?php echo get_the_custom_logo_url() ?>"
+            <img src="<?php echo $custom_logo_url ?>"
                 alt="<?php echo bloginfo('name') ?>"
                 style="
                     max-width: 200px;
