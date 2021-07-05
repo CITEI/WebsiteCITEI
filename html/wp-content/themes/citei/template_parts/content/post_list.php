@@ -41,7 +41,7 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                                 </a>
                             </div>
                         <?php } ?>
-                        <div class="col p-2 my-auto d-flex flex-column"
+                        <div class="col px-4 p-2 my-auto d-flex flex-column"
                             role="row" tabindex="-1">
                             <h3><?php echo get_the_title(); ?></h3>
                             <p><?php echo get_the_excerpt(); ?></p>

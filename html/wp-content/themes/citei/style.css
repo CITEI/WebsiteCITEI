@@ -1,10 +1,39 @@
 /*
 Theme Name: CITEI
 Author: Nickolas da Rocha Machado & Natalia Zambe da Silva
-Version: 0.1.1
+Version: 1.2.1
 Text Domain: citei
  */
 
+/* Base */
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* Responsive typography */
+@media (min-width: 768px)
+{
+  html
+  {
+    font-size: 16px;
+  }
+}
+
+html
+{
+  font-size: 12px;
+}
+
+h4{  font-size: 2rem; }
+p, h5, a, span{  font-size: 1.6rem; }
+.display-3{ font-size: 3.5rem; }
+.display-4{ font-size: 3.0rem; }
+.text-muted{ font-size: 1.5rem !important; }
+.btn{ font-size: 1.5rem; }
+.tag{ font-size: 1.2rem; }
+
+/* Bootstrap fixes */
 .container
 {
     flex-flow: column;
@@ -13,21 +42,6 @@ Text Domain: citei
 .row, .full-width, .container-fluid
 {
     width: 100%;
-}
-
-.row-spacing
-{
-    margin-bottom: 10px;
-}
-
-.widget
-{
-    list-style-type: none;
-}
-
-html
-{
-    scroll-behavior: smooth;
 }
 
 .rounded-pill-right
@@ -39,6 +53,17 @@ html
 {
     border-top-left-radius: 50rem !important;
     border-bottom-left-radius: 50rem !important;
+}
+
+/* My Widgets */
+.row-spacing
+{
+    margin-bottom: 10px;
+}
+
+.widget
+{
+    list-style-type: none;
 }
 
 .cover
@@ -58,28 +83,25 @@ html
     flex: 1;
 }
 
+.tag
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.carousel-inner
+{
+  min-height: 50vh;
+}
+
 /* Artificial Zoom */
-body, .lead
-{
-    font-size: 120%;
-}
-.text-muted
-{
-    font-size: 90% !important;
-}
-.btn
-{
-    font-size: 95%;
-}
 .carousel-control-prev-icon, 
 .carousel-control-next-icon
 {
     width: 25px;
     height: 25px;
-}
-.tag
-{
-    font-size: 105%;
 }
 @media (min-width: 576px)
 {
