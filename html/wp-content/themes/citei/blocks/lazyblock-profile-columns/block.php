@@ -29,7 +29,8 @@ Author: Nickolas da Rocha Machado & Natalia Zambe
                             <?php echo esc_html($profile['title']) ?>
                         </h4>
                     </a>
-                    <p class="card-text"><?php echo esc_html($profile['description']) ?></p>
+                    <?php /* Not escaped HTML in order to use line breaks */ ?>
+                    <p class="card-text"><?php echo $profile['description'] ?></p>
                 </div>
             </div>
         </div>
